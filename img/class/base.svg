@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="510.00003"
+   height="510.00003"
+   viewBox="0 0 134.9375 134.93751"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.91+devel+osxmenu r12922"
+   sodipodi:docname="base.svg"
+   inkscape:export-filename="/Users/k.ks_mac/Desktop/みるく屋本舗/img/None.png"
+   inkscape:export-xdpi="94.117638"
+   inkscape:export-ydpi="94.117638">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="152.32774"
+     inkscape:cy="309.8962"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1080"
+     inkscape:window-height="675"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     showguides="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="黒地"
+     transform="translate(1.3229192,1.3229236)"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:0.40119761;stroke:none;stroke-width:2.07605004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71065991"
+       id="rect4575-3"
+       width="130.19287"
+       height="127.38654"
+       x="1.0493993"
+       y="2.4525588" />
+    <rect
+       style="fill:#000000;fill-opacity:0.38323355;stroke-width:0.22940536"
+       id="rect4172"
+       width="89.958328"
+       height="19.276785"
+       x="21.16667"
+       y="56.507439" />
+  </g>
+  <g
+     inkscape:label="メイン"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.3229192,-163.3854)"
+     style="display:inline"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="武器マーク"
+     transform="translate(1.3229192,1.3229236)"
+     style="display:inline"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="枠"
+     sodipodi:insensitive="true">
+    <rect
+       id="rect4540"
+       width="132.29167"
+       height="132.29167"
+       x="1.3229182"
+       y="1.3229182"
+       style="display:inline;fill:#840000;fill-opacity:0.01395347;stroke:#ffffff;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
