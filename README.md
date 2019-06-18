@@ -1,5 +1,7 @@
 # Website_source
 公式サイトのソースコード  
+各自コミットして編集してください  
+不明な点がございましたらOrmairまで  
 # ファイル構造
 - /Website_source  
     - /css  
