@@ -1,6 +1,6 @@
 # Website_source
 公式サイトのソースコード  
-# 基本的なファイルの説明  
+# ファイル構造
 - /Website_source  
     - /css  
         - 〇〇〇.css  
