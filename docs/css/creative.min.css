@@ -6469,14 +6469,14 @@ button.bg-dark:focus,
 button.bg-dark:hover {
   background-color: #1d2124 !important;
 }
-.bg-lyellow {
-  background-color: #f6ce59 !important;
+.bg-dpurple {
+  background-color: #283149 !important;
 }
-a.bg-lyellow:focus,
-a.bg-lyellow:hover,
-button.bg-lyellow:focus,
-button.bg-lyellow:hover {
-  background-color: #b39642 !important;
+a.bg-dpurple:focus,
+a.bg-dpurple:hover,
+button.bg-dpurple:focus,
+button.bg-dpurple:hover {
+  background-color: #35405f !important;
 }
 .bg-white {
   background-color: #fff !important;
@@ -9673,12 +9673,12 @@ a.text-lgreen:focus,
 a.text-lgreen:hover{
   color: #4c5e28 !important;
 }
-.text-deepskyblue{
-  color: #00bfff !important;
+.text-deepbg{
+  color: #00eeff !important;
 }
-a.text-deepskyblue:focus,
-a.text-deepskyblue:hover{
-  color: #015c7a !important;
+a.text-deepbg:focus,
+a.text-deepbg:hover{
+  color: #014f55 !important;
 }
 .text-body {
   color: #212529 !important;
