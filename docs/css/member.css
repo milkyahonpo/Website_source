@@ -1,0 +1,40 @@
+.member-box-caption > p {
+  font-size: calc(0.65625rem + ((1vw - 4.8px) * 0.5556));
+}
+#member {
+  padding-top: 92px !important;
+}
+#member .class {
+  /*display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 20%;
+  height: auto;
+  margin-top: auto;
+  margin-left: auto;*/
+  display: block;
+  /*float: right;*/
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 20%;
+  height: auto;
+  opacity: 0.8;
+}
+#member .container-fluid .member-box .member-box-caption .member-position {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: calc(1rem + ((1vw - 4.8px) * 0.6944));
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2eccfa;
+}
+#member .container-fluid .member-box .member-box-caption .member-name {
+  font-size: calc(1.25rem + ((1vw - 4.8px) * 0.6944));
+  font-weight: 600;
+}
+#member .container-fluid .member-box:hover .member-box-caption {
+  opacity: 1;
+}
