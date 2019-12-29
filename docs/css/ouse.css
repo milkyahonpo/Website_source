@@ -1,0 +1,18 @@
+:root{
+  --main: #2D2795;
+}
+#mainNav .navbar-brand{
+  color: var(--blue) !important;
+} 
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: linear-gradient(180deg, white, var(--main));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+section{
+  background-color: var(--main);
+}
