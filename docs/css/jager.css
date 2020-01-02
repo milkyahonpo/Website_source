@@ -1,5 +1,8 @@
 :root{
-  --main: #2D2795;
+  --main: yellow;
+}
+#mainNav .navbar-brand{
+  color: black !important;
 }
 header.masthead {
   padding-top: 10rem;
