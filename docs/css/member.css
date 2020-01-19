@@ -28,6 +28,7 @@ body::before{
   box-shadow: 0 0 10px white;
   border-radius: 5px;
   color: white;
+  z-index: -1;
 }
 .member-box img{
   border-radius: 5px 5px 0 0;
