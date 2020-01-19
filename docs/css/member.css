@@ -117,8 +117,8 @@ body::before{
 .member-box .discription{
   padding: 1rem;
 }
-.member-box .discription h1{
-  font-size: 2rem;
+h1{
+  font-size: 1.5rem;
 }
 footer{
   position: relative;
@@ -146,7 +146,7 @@ footer{
   .member-box .content .name{
     padding: 0;
   }
-  .member-box .discription h1{
+  h1{
     font-size: 2.5rem;
   }
 }
