@@ -21,6 +21,7 @@ body::before{
   padding-top: 92px !important;
 }
 .member-box{
+  position: relative;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,6 @@ body::before{
   box-shadow: 0 0 10px white;
   border-radius: 5px;
   color: white;
-  z-index: -1;
 }
 .member-box img{
   border-radius: 5px 5px 0 0;
@@ -57,15 +57,72 @@ body::before{
   border-bottom: 1px solid aliceblue;
 }
 .member-box .content .name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 1.5rem;
 }
+.member-box .content .name a{
+  position: relative;
+  padding: .2rem 1rem;
+  line-height: 2.5rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.member-box .content .name a::before,
+.member-box .content .name a::after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  height:1px;
+  width:0;
+  background: white;
+  transition: .2s ease all;
+}
+.member-box .content .name a::after{
+  right:inherit;
+  top:inherit;
+  left: 0;
+  bottom:0;
+}
+.member-box .content .name a:hover:before,
+.member-box .content .name a:hover:after{
+  width:100%;
+  transition: .5s ease all;
+}
+
+.member-box .content .name a:link,
+.member-box .content .name a:visited{
+  text-decoration: none;
+}
+.member-box .content .name a:hover .delta{
+  right: -.5rem;
+}
+.delta{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  right: -.2rem;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transform: rotate(-45deg);
+  transition: all .2s;
+}
+
 .member-box .discription{
   padding: 1rem;
 }
 .member-box .discription h1{
   font-size: 2rem;
 }
-
+footer{
+  position: relative;
+}
 @media screen and (min-width: 768px){
   .member-box{
     flex-direction: row-reverse;
