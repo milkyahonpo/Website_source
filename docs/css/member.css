@@ -65,7 +65,7 @@ body::before{
 .member-box .content .name a{
   position: relative;
   text-align: center;
-  width: 90px;
+  min-width: 90px;
   padding: .2rem 1rem;
   line-height: 2.5rem;
   color: white;
@@ -120,7 +120,7 @@ body::before{
   padding: 1rem;
 }
 h1{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 footer{
   position: relative;
