@@ -48,6 +48,10 @@ body{
 .member-box .discription{
   padding: 1rem;
 }
+.member-box .discription h1{
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 768px){
   .member-box{
     flex-direction: row-reverse;
@@ -70,5 +74,8 @@ body{
   }
   .member-box .content .name{
     padding: 0;
+  }
+  .member-box .discription h1{
+    font-size: 2.5rem;
   }
 }
