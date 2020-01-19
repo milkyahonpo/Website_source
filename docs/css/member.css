@@ -1,40 +1,74 @@
-.member-box-caption > p {
-  font-size: calc(0.65625rem + ((1vw - 4.8px) * 0.5556));
+body{
+  background-image: url("../img/member-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 #member {
   padding-top: 92px !important;
 }
-#member .class {
-  /*display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: row;
-  width: 20%;
-  height: auto;
-  margin-top: auto;
-  margin-left: auto;*/
-  display: block;
-  /*float: right;*/
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 20%;
-  height: auto;
-  opacity: 0.8;
+.member-box{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  background: linear-gradient(#ffffff6e, #ffffff);
 }
-#member .container-fluid .member-box .member-box-caption .member-position {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: calc(1rem + ((1vw - 4.8px) * 0.6944));
-  font-weight: 600;
+.member-box img{
+  border-radius: 5px 5px 0 0;
+}
+.member-box .content{
+  padding-top: 0;
+  text-align: left;
+}
+.member-box .content h6{
   text-transform: uppercase;
-  color: #2eccfa;
+  filter: drop-shadow(0 0 5px #3AA0F4);
 }
-#member .container-fluid .member-box .member-box-caption .member-name {
-  font-size: calc(1.25rem + ((1vw - 4.8px) * 0.6944));
-  font-weight: 600;
+.member-box .content aside{
+  display: flex;
 }
-#member .container-fluid .member-box:hover .member-box-caption {
-  opacity: 1;
+.member-box .content aside p{
+  padding: 0 .5rem;
+  margin: 0 .5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  list-style: none;
+}
+.member-box .member-border{
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid dimgray;
+}
+.member-box .content .name{
+  padding: 1rem 1.5rem;
+}
+.member-box .discription{
+  padding: 1rem;
+}
+@media screen and (min-width: 768px){
+  .member-box{
+    flex-direction: row-reverse;
+  }
+  .member-box img{
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+  }
+  .member-box .img,
+  .member-box .content{
+    padding: 1.5rem;
+    width: 50%;
+  }
+  .member-box .img{
+    display: flex;
+    align-items: center;
+  }
+  .member-box .content{
+    padding-top: 1.5rem;
+  }
+  .member-box .content .name{
+    padding: 0;
+  }
 }
