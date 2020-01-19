@@ -38,7 +38,7 @@ body::before{
 }
 .member-box .content h6{
   text-transform: uppercase;
-  filter: drop-shadow(0 0 5px #3AA0F4);
+  filter: drop-shadow(0 0 5px orange);
 }
 .member-box .content aside{
   display: flex;
