@@ -125,6 +125,51 @@ h1{
 footer{
   position: relative;
 }
+
+blockquote {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 7px 16px;
+  box-sizing: border-box;
+  font-style: italic;
+  border-radius: 5px;
+  box-shadow: 0 0 3px white;
+}
+blockquote::before,
+blockquote::after{
+  display: inline-block;
+  position: absolute;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  filter: drop-shadow(0 0 3px white);
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+blockquote:before{
+  top: -20px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  content: "\f10d";
+}
+blockquote:after{
+  bottom: -20px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  content: "\f10e";
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
+
 @media screen and (min-width: 992px){
   .member-box{
     flex-direction: row-reverse;
@@ -150,5 +195,11 @@ footer{
   }
   h1{
     font-size: 2.5rem;
+  }
+  blockquote:before{
+    left: -20px;
+  }
+  blockquote:after{
+    right: -20px;
   }
 }
