@@ -1,0 +1,24 @@
+.masthead{
+  background-image: none !important;
+}
+.masthead,
+.page-section{
+  border-bottom: 1px solid #ddd;
+}
+.page-section:last-of-type{
+  border: none;
+}
+.personA,
+.personB{
+  display: flex;
+}
+.personA{
+  justify-content: flex-end;
+}
+.personB{
+  justify-content: flex-start;
+}
+.personA p,
+.personB p{
+  
+}

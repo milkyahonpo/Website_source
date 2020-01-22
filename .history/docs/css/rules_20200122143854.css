@@ -1,0 +1,24 @@
+.masthead{
+  background-image: none !important;
+}
+.masthead,
+.page-section{
+  border-bottom: 1px solid #ddd;
+}
+.page-section:last-of-type{
+  border: none;
+}
+.communication{
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: flex-end;
+}
+.communication span{
+  width: 30%;
+}
+.communication p{
+  border: 1px solid black;
+}

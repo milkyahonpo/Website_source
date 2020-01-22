@@ -1,0 +1,10 @@
+.masthead{
+  background-image: none !important;
+}
+.masthead,
+.page-section{
+  border-bottom: 1px solid #aaaaaa;
+}
+.page-section:last-of-type{
+  border: none;
+}

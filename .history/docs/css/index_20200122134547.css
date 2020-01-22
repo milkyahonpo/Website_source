@@ -1,0 +1,17 @@
+.card-dark{
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+#infomation ol{
+  box-sizing: border-box;
+  box-shadow: 0 0 3px #888;
+  border-radius: 5px;
+}
+@media screen and ()

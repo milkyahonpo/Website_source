@@ -1,0 +1,47 @@
+.masthead{
+  background-image: none !important;
+}
+.masthead,
+.page-section{
+  border-bottom: 1px solid #ddd;
+}
+.page-section:last-of-type{
+  border: none;
+}
+.personA,
+.personB{
+  display: flex;
+  position: relative;
+}
+.personA{
+  justify-content: flex-end;
+}
+.personA::before,
+.personB::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+.personB::before{
+  right: 0;
+  border-left: 15px solid transparent;
+}
+.personA div,
+.personB div{
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+}
+.personA p,
+.personB p{
+  margin-bottom: 0 !important;
+}
+.personA h3,
+.personB h3{
+  font-weight: bold;
+}

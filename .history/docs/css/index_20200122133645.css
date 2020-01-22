@@ -1,0 +1,8 @@
+.card-dark{
+  
+}
+#infomation ol{
+  box-sizing: border-box;
+  box-shadow: 0 0 3px #888;
+  border-radius: 5px;
+}
