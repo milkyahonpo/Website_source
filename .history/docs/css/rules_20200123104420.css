@@ -1,0 +1,58 @@
+.masthead{
+  background-image: none !important;
+}
+.masthead,
+.page-section{
+  border-bottom: 1px solid #ddd;
+  background-image: linear-gradient(white black);
+}
+.page-section:last-of-type{
+  border: none;
+}
+.personA,
+.personB{
+  display: flex;
+  position: relative;
+  margin: 3rem 15px;
+  filter: drop-shadow(0 0 2px gray);
+}
+.personA{
+  justify-content: flex-end;
+}
+.personA::before,
+.personB::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+.personB::before{
+  left: 0;
+  margin-left: -30px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+.personA div,
+.personB div{
+  width: 250px;
+  background-color: #e0edff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+.personA p,
+.personB p{
+  margin-bottom: 0 !important;
+}
+.personA h4,
+.personB h4{
+  font-weight: bold;
+}
+@media screen and (min-width: 768px){
+  .personA div,
+  .personB div{
+    width: 300px;
+  }
+}
