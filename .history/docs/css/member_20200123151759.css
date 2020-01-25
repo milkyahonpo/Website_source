@@ -1,0 +1,208 @@
+body{
+  position: relative;
+  background-image: url("../img/member-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 0;
+}
+body::before{
+  background: inherit;
+  content: '';
+  position: fixed;
+  filter: blur(5px);
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -1;
+}
+#member {
+  padding-top: 92px !important;
+}
+.member-box{
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px white;
+  border-radius: 5px;
+  color: white;
+}
+.member-box img{
+  border-radius: 5px 5px 0 0;
+}
+.member-box .content{
+  padding-top: 0;
+  text-align: left;
+}
+.member-box .content h6{
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 5px orange);
+}
+.member-box .content aside{
+  display: flex;
+}
+.member-box .content aside p{
+  padding: 0 .5rem;
+  margin: 0 .5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
+  list-style: none;
+}
+.member-box .member-border{
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid aliceblue;
+}
+.member-box .content .name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.member-box .content .name a{
+  position: relative;
+  text-align: center;
+  min-width: 90px;
+  padding: .2rem 1rem;
+  line-height: 2.5rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.member-box .content .name a::before,
+.member-box .content .name a::after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  height:1px;
+  width:0;
+  background: white;
+  transition: .2s ease all;
+}
+.member-box .content .name a::after{
+  right:inherit;
+  top:inherit;
+  left: 0;
+  bottom:0;
+}
+.member-box .content .name a:hover:before,
+.member-box .content .name a:hover:after{
+  width:100%;
+  transition: .5s ease all;
+}
+
+.member-box .content .name a:link,
+.member-box .content .name a:visited{
+  text-decoration: none;
+}
+.member-box .content .name a:hover .delta{
+  right: -.5rem;
+}
+.delta{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  right: -.2rem;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transform: rotate(-45deg);
+  transition: all .2s;
+}
+
+.member-box .discription{
+  padding: 1rem;
+}
+h1{
+  font-size: 1.8rem;
+}
+footer{
+  position: relative;
+}
+
+blockquote {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 7px 16px;
+  box-sizing: border-box;
+  font-style: italic;
+  border-radius: 5px;
+  box-shadow: 0 0 3px white;
+}
+blockquote::before,
+blockquote::after{
+  display: inline-block;
+  position: absolute;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  filter: drop-shadow(0 0 3px white);
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+blockquote:before{
+  top: -20px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  content: "\f10d";
+}
+blockquote:after{
+  bottom: -20px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  content: "\f10e";
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 992px){
+  .member-box{
+    flex-direction: row-reverse;
+  }
+  .member-box img{
+    border-radius: 5px;
+    box-shadow: 0 0 3px white;
+  }
+  .member-box > div{
+    border-radius: 5px;
+    box-shadow: 0 0 3px white;
+  }
+  .member-box .img,
+  .member-box .content{
+    padding: 1.5rem;
+    width: 50%;
+  }
+  .member-box .img{
+    display: flex;
+    align-items: center;
+  }
+  .member-box .content{
+    padding-top: 1.5rem;
+  }
+  .member-box .content .name{
+    padding: 0;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  blockquote:before{
+    left: -20px;
+  }
+  blockquote:after{
+    right: -20px;
+  }
+}
