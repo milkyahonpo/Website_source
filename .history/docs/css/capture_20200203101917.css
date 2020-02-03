@@ -18,11 +18,8 @@ h3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
 }
-iframe.youtube{
-  width: 100%;
-}
+iframe.youtube
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
