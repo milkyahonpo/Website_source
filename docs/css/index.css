@@ -9,8 +9,11 @@
   margin-bottom: 1rem;
   color: black;
 }
-#infomation ol.rule{
-  list-style: circle;
+#infomation ol{
+  list-style-image: url("../img/list-image/normal.png");
+}
+#infomation ol.circle{
+  list-style-image: url("../img/list-image/circle.png");
 }
 .card-dark > div{
   margin-bottom: 1.5rem;
