@@ -16,12 +16,7 @@ h3{
 }
 .movie-box{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-iframe.youtube{
-  width: 100%;
+  justify-content: center;
 }
 :root {
   --blue: #007bff;

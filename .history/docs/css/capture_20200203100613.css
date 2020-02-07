@@ -18,10 +18,10 @@ h3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
 }
-iframe.youtube{
-  width: 100%;
+.movie-box *{
+  
+}
 }
 :root {
   --blue: #007bff;
