@@ -168,7 +168,12 @@ blockquote cite {
   color: #888888;
   font-size: 0.9em;
 }
-
+.name img{
+  height: 2.3rem;
+  width: auto;
+  box-shadow: none !important;
+  padding-right: 1rem;
+}
 @media screen and (min-width: 992px){
   .member-box{
     flex-direction: row-reverse;
