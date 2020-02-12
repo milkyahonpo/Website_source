@@ -184,13 +184,6 @@ blockquote cite {
   display: flex;
   justify-content: space-between;
 }
-.modal-controller .download{
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: none;
-  border: none;
-  opacity: 0.5;
-}
 @media screen and (min-width: 992px){
   .member-box{
     flex-direction: row-reverse;
