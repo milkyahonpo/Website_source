@@ -28,7 +28,7 @@
         <b>みるく屋本舗</b>
       </a>
       <label>
-        <input type="checkbox" name="" data-toggle="collapse"
+        <input id="toggleChk" type="checkbox" name="" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
         <div class="navbar-toggler">
@@ -38,19 +38,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#basic">基礎知識</a>
+            <a class="nav-link js-scroll-trigger" href="#basic" onclick="moved()">基礎知識</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lv1-50">Lv01～Lv50</a>
+            <a class="nav-link js-scroll-trigger" href="#lv1-50" onclick="moved()">Lv01～Lv50</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lv51-75">Lv51～Lv75</a>
+            <a class="nav-link js-scroll-trigger" href="#lv51-75" onclick="moved()">Lv51～Lv75</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lv76-80">Lv76～Lv80</a>
+            <a class="nav-link js-scroll-trigger" href="#lv76-80" onclick="moved()">Lv76～Lv80</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#lv81-95">Lv81～Lv90</a>
+            <a class="nav-link js-scroll-trigger" href="#lv81-95" onclick="moved()">Lv81～Lv90</a>
           </li>
         </ul>
       </div>
@@ -342,7 +342,8 @@
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
+  <script src="js/creative.min.js"></script>]
+  <script src="js/navbarToggler.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

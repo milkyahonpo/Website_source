@@ -29,7 +29,7 @@
           <b>みるく屋本舗</b>
         </a>
         <label>
-          <input type="checkbox" name="" data-toggle="collapse"
+          <input id="toggleChk" type="checkbox" name="" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
           <div class="navbar-toggler">
@@ -39,16 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link js-scroll-trigger" href="#about">チーム概要</a>
+              <a class="nav-link js-scroll-trigger" href="#about" onclick="moved()">チーム概要</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#infomation">今後の予定</a>
+              <a class="nav-link js-scroll-trigger" href="#infomation" onclick="moved()">今後の予定</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#news">アルバム</a>
+              <a class="nav-link js-scroll-trigger" href="#news" onclick="moved()">アルバム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">加入したい方は</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="moved()">加入したい方は</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -312,6 +312,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="js/navbarToggler.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
