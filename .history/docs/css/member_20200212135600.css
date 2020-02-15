@@ -191,9 +191,6 @@ blockquote cite {
   border: none;
   opacity: 0.5;
 }
-.modal-content .download:hover{
-  opacity: 0.8;
-}
 @media screen and (min-width: 992px){
   .member-box{
     flex-direction: row-reverse;
