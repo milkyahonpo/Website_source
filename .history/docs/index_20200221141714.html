@@ -25,37 +25,52 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="./img/logo.png" width="50" height="50" alt="">
+          <img load="lazyload" src="./img/logo.png" alt="">
           <b>みるく屋本舗</b>
         </a>
-        <button class="navbar-toggler navbar-togglar-right" type="button" data-toggle="collapse"
+        <label>
+          <input id="toggleChk" type="checkbox" name="" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="navbar-toggler">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </div>
+        </label>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">チーム概要</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link js-scroll-trigger" href="#about" onclick="moved()">チーム概要</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link js-scroll-trigger" href="member.html" onclick="moved()">メンバー一覧</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="member.html">メンバー一覧</a>
+              <a class="nav-link js-scroll-trigger" href="#infomation" onclick="moved()">今後の予定</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#infomation">今後の予定</a>
+              <a class="nav-link js-scroll-trigger" href="#news" onclick="moved()">アルバム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#news">アルバム</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="moved()">加入したい方は</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">加入したい方は</a>
+              <a class="nav-link" href="capture.html" onclick="moved()">攻略本</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="capture.html">攻略本</a>
+              <a class="nav-link" href="teamform.html" onclick="moved()">お問い合わせ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="teamform.html">お問い合わせ</a>
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ページ外リンク
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link js-scroll-trigger" href="member.html">メンバー一覧</a>
+                <a class="nav-link" href="capture.html">攻略本</a>
+                <a class="nav-link" href="teamform.html">お問い合わせ</a>
+              </div>
             </li>
+            -->
           </ul>
         </div>
       </div>
@@ -71,26 +86,6 @@
           </div>
           <div class="col-lg-8 align-self-baseline">
             <p class="text-white font-weight-light mb-5" style="font-size: 25px">PSO2のチーム「みるく屋本舗」のHPです！</p>
-
-            <div class="text-white mb-3" style="text-align: center">
-              <span style="vertical-align: top">訪問者はあなたで</span>
-              <!--タグはここから-->
-              <table border="0" cellspacing="0" cellpadding="0" style="display: inline-block;">
-                <tr>
-                  <td align="center"><a href="http://www.rays-counter.com/"><img
-                        src="http://www.rays-counter.com/d439_f6_159/5d0788d610209/" alt="アクセスカウンター" border="0"></a></td>
-                </tr>
-                <tr>
-                  <td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img
-                      src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img
-                      src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img
-                      src="http://www.rays-counter.com/images/counter_04.gif" border="0"><img
-                      src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td>
-                </tr>
-              </table>
-              <!--ここまで-->
-              <span style="vertical-align: top">人目です！</span>
-            </div>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">どんなチームなの？</a>
           </div>
         </div>
@@ -110,7 +105,7 @@
             <p class=" mb-4">活動時間帯 : <b>18:00～0:00</b></p>
             <p class=" mb-4">活動内容 : <b>チムメン交流、協力してクエスト</b></p>
             <p class=" mb-4"><b>不定期ですがチームイベントも開催予定！</b></p>
-            <p class=" mb-4 pb-4">チーム人数 : 現在は <b>11</b> 人です！</p>
+            <p class=" mb-4 pb-4">チーム人数 : 現在は <b>10</b> 人です！</p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="#infomation">どんなことしてるの？</a>
           </div>
         </div>
@@ -125,6 +120,59 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="mt-5 mb-3">
+              <h3 class="text-lgreen font-weight-bold">第２回チームイベント開催決定ッ！</h3>
+              <span class="badge badge-primary"><i class="fas fa-check"></i>チームイベント</span>
+              <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2020/02/06</span>
+            </div>
+            <p>遂に<strong class="lead font-weight-bold">第２回チームイベント開催決定！</strong><br>
+            参加を希望される方は、前回のイベントと同様に参加費をお支払いください！！</p>
+            <div class="card-dark">
+              <h3>イベントの予定</h3>
+              <hr>
+              <div>
+                <h5>日程</h5>
+                <div>
+                  <span class="badge badge-info"><i class="fas fa-calendar-alt"></i> 2020/03/14 (土)</span>
+                  <span class="badge badge-secondary"><i class="fas fa-clock"></i> 20:00～0:00</span>
+                </div>
+              </div>
+              <div>
+                <h5>内容一覧</h5>
+                <ol class="circle">
+                  <li>最速を目指せ！バルーンタイムアタック！</li>
+                  <li>日頃の行いが勝利を呼ぶ？！ボッカ・デラ・ベリタ</li>
+                  <li>自慢のコスで勝負！ファッションショー！<small>※</small></li>
+                  <li>皆で仲良く記念撮影！</li>
+                </ol>
+              </div>
+              <div>
+                <h5>イベントルール</h5>
+                <ol class="circle">
+                  <li>各内容での順位によってポイントが付与されます！(詳細は当日説明)</li>
+                  <li><span class="lead font-weight-bold">総合ポイントが1～3位の人には豪華景品</span>があります！</li>
+                  <li>参加賞もあります！</li>
+                  <li><small>※</small>当日までに以下のジャンルから<span class="lead font-weight-bold">１つ</span>選んでファッションを作り、そのテーマで出場してください！！</li>
+                  <ol class="normal">
+                    <li>ぼくの考えた最強のARKS</li>
+                    <li>春のトレンドファッション</li>
+                    <li>卒業式</li>
+                  </ol>
+                  <li><small>※</small>コスチュームのコストは、<span class="lead font-weight-bold">購入時点での相場で1000万メセタを限度額</span>とします。(アクセサリ不問)</li>
+                </ol>
+              </div>
+              <div>
+                <h5>注意事項</h5>
+                <ol class="circle">
+                  <li>進行をスムーズに行うよう全力を尽くしますが、万一前回のように終了時間を過ぎてしまう可能性がありますのでご了承ください。</li>
+                </ol>
+              </div>
+            </div>
+            <p>新しくチームに入った方にも景品が貰えるチャンスが沢山あります！！皆で楽しみましょう！！</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="mt-5 mb-3">
               <h3 class="text-lgreen font-weight-bold">第１回チームイベント開催決定ッ！</h3>
               <span class="badge badge-primary"><i class="fas fa-check"></i>チームイベント</span>
               <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2019/06/29</span>
@@ -135,15 +183,15 @@
             集めたメセタは、イベント内の順位で誰かの手に賞金として渡ります！<b>一攫千金のチャンス！</b></p>
             <div class="card-dark">
               <h3>参加費のお支払方法</h3>
-              <ol>
+              <hr>
+              <ol class="circle">
                 <li>ビジフォンを開いて「マイショップ」を選択する。</li>
                 <li>「チームメンバーのマイショップを開く」より、Ormairのマイショップを選択する。</li>
                 <li>販売しているグラインダーを一つ購入する。</li>
                 <li>参加手続き完了！</li>
               </ol>
             </div>
-            <p></p>メンバー同士の親睦を深める場となり、チームの魅力を存分に感じていただければ幸いです！</p>
-            <p>記念すべきみるく屋本舗の最初のチームイベント、是非ふるってご参加ください！！！！</p>
+            <p>メンバー同士の親睦を深める場となり、チームの魅力を存分に感じていただければ幸いです！記念すべきみるく屋本舗の最初のチームイベント、是非ふるってご参加ください！！！！</p>
             </p>
           </div>
         </div>
@@ -174,13 +222,13 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="img/album03.jpg"><img class="img-thumbnail d-block w-100" src="img/album03.jpg" alt="First slide"></a>
+                    <a href="img/album03.jpg"><img load="lazyload" class="img-thumbnail d-block w-100" src="img/album03.jpg" alt="First slide"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href="img/album04.jpg"><img class="img-thumbnail d-block w-100" src="img/album04.jpg" alt="Second slide"></a>
+                    <a href="img/album04.jpg"><img load="lazyload" class="img-thumbnail d-block w-100" src="img/album04.jpg" alt="Second slide"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href="img/album05.jpg"><img class="img-thumbnail d-block w-100" src="img/album05.jpg" alt="Third slide"></a>
+                    <a href="img/album05.jpg"><img load="lazyload" class="img-thumbnail d-block w-100" src="img/album05.jpg" alt="Third slide"></a>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -205,7 +253,7 @@
             <p>本当はこの後に、みんなで仮面行こうと思ってたんですが、
             予想していた通りそううまくはいかず...終わるころには0時になっていましたw</p>
             <p>なんやかんや色々ありましたけど、<strong class="lead font-weight-bold">みなさん楽しんでいただけました！！</strong></p>
-            <a href="img/album06.jpg"><img class="img-fluid img-thumbnail my-4" src="img/album06.jpg"></a>
+            <a href="img/album06.jpg"><img load="lazyload" class="img-fluid img-thumbnail my-4" src="img/album06.jpg"></a>
             <p>最後にみんなで記念撮影をしました～</p>
             <p>時間も時間でしたので、もっといい感じのSSを撮影したかったですが、断念...</p>
             <p>今回のすごろくの優勝者は...<strong class="display-4 lead font-weight-bold">おうせさん</strong>でした！！！</p>
@@ -218,7 +266,7 @@
               <span class="badge badge-info"><i class="far fa-calendar-check"></i> 2019/06/06</span>
               <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2019/06/06</span>
             </div>
-            <a href="img/album02.jpg"><img class="img-fluid img-thumbnail mb-4" src="img/album02.jpg"></a>
+            <a href="img/album02.jpg"><img load="lazyload" class="img-fluid img-thumbnail mb-4" src="img/album02.jpg"></a>
             <p>私たちに新しいメンバーが加わりました～</p>
             <p><strong class="lead font-weight-bold">キャストのイェーガーさんです！</strong></p>
             <p>つい二日前に始めたばかりで、PS4勢の方だとお聞きしました。</p>
@@ -231,7 +279,7 @@
               <span class="badge badge-info"><i class="far fa-calendar-check"></i> 2019/06/02</span>
               <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2019/06/02</span>
             </div>
-            <a href="img/album01.jpg"><img class="img-fluid img-thumbnail mb-4" src="img/album01.jpg"></a>
+            <a href="img/album01.jpg"><img load="lazyload" class="img-fluid img-thumbnail mb-4" src="img/album01.jpg"></a>
             <p>この度、<strong class="lead font-weight-bold">「みるく屋本舗」</strong>という名前で新たにチームを設立いたしました！</p>
             <p>チームの皆がいろいろな人と交流して、普通にPSO2をしているだけでは経験できない、メンバーとの絆から生まれる楽しさを提供できればと思っています！</p>
             <p>このサイトもまだまだ開設したばかりなので，コンテンツももっと充実させていきたいなー...</p>
@@ -275,6 +323,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="js/navbarToggler.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -283,9 +332,6 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
   </body>
 </html>
