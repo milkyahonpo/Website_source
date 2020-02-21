@@ -3143,16 +3143,31 @@ input[type="submit"].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
+  background-color: #F0F0F3;
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: none;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+}
+.dropdown-menu > a{
+  margin-left: 1rem;
+  color: #6c757d !important;
+}
+.dropdown-menu > a:hover{
+  color: #f4623a !important;
+}
+@media screen and (min-width: 991px){
+  .dropdown-menu > a{
+    margin-bottom: .8rem;
+  }
+  .dropdown-menu > a:last-of-type{
+    margin-bottom: 0;
+  }
 }
 .dropdown-menu-left {
   right: auto;
@@ -4201,6 +4216,11 @@ input[type="submit"].btn-block {
 .navbar-brand:hover {
   text-decoration: none;
 }
+.navbar-brand img{
+  width: 2rem;
+  height: auto;
+  padding-bottom: .2rem;
+}
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4506,13 +4526,20 @@ input[type="submit"].btn-block {
 .navbar-light .navbar-nav .show > .nav-link {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-toggler {
+.navbar-light label {
+  position: relative;
+  cursor: pointer;
+}
+.navbar-light .navbar-toggler{
   color: #F0F0F3;
   border: none;
   box-shadow: -3px -3px 10px rgba(255, 255, 255, 1), 3px 3px 10px rgba(0, 0, 0, .1);
 }
-.navbar-light .navbar-toggler:hover{
-  box-shadow: -3px -3px 10px rgba(0, 0, 0, .1), 3px 3px 10px rgba(255, 255, 255, 1) inset;
+.navbar-light input[type="checkbox"]:checked ~ .navbar-toggler {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .1) inset, -3px -3px 10px rgba(255, 255, 255, 1) inset;
+}
+.navbar-light input[type="checkbox"]:checked span{
+  background-color: black;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -9863,6 +9890,14 @@ hr.yellow{
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #f4623a !important;
+}
+#mainNav label{
+  position: relative;
+  cursor: pointer;
+}
+#mainNav label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
 }
 @media (min-width: 992px) {
   #mainNav {

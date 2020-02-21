@@ -25,36 +25,40 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="./img/logo.png" width="50" height="50" alt="">
+          <img src="./img/logo.png" alt="">
           <b>みるく屋本舗</b>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <label>
+          <input id="toggleChk" type="checkbox" name="" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="navbar-toggler">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </div>
+        </label>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link js-scroll-trigger" href="#about">チーム概要</a>
+              <a class="nav-link js-scroll-trigger" href="#about" onclick="moved()">チーム概要</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="member.html">メンバー一覧</a>
+              <a class="nav-link js-scroll-trigger" href="#infomation" onclick="moved()">今後の予定</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#infomation">今後の予定</a>
+              <a class="nav-link js-scroll-trigger" href="#news" onclick="moved()">アルバム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#news">アルバム</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="moved()">加入したい方は</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">加入したい方は</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="capture.html">攻略本</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="teamform.html">お問い合わせ</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ページ外リンク
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link js-scroll-trigger" href="member.html">メンバー一覧</a>
+                <a class="nav-link" href="capture.html">攻略本</a>
+                <a class="nav-link" href="teamform.html">お問い合わせ</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -308,6 +312,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="js/navbarToggler.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
