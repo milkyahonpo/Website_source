@@ -23,8 +23,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <link href="css/jquery.bxslider.css" rel="stylesheet">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <!-- scrollreveal.js -->
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.3/scrollreveal.min.js"></script>
 
     <title>みるく屋本舗 - トップページ -</title>
   </head>
@@ -166,7 +166,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="grid">
-              <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
+              <div class="card">
                 <div class="card-body">
                   <div class="mb-3">
                     <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2020/02/06</span>
@@ -176,7 +176,7 @@
                   <a href="article/news002.html" class="btn btn-primary">詳細</a>
                 </div>
               </div>
-              <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
+              <div class="card">
                 <div class="card-body">
                   <div class="mb-3">
                     <span class="badge badge-secondary"><i class="fas fa-pen-square"></i> 2019/06/29</span>
@@ -191,7 +191,7 @@
         </div>
       </div>
     </section>
-    <hr>
+
     <!-- Call to Action Section -->
     <section class="page-section" id="news" style="background: linear-gradient(#ffffff, aliceblue);">
       <div class="container text-left">
@@ -200,7 +200,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="grid">
-              <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
+              <div class="card animate">
                 <img src="img/album03.jpg" class="card-img-top" alt="第一回イベントの様子">
                 <div class="card-body">
                   <div class="mb-3">
@@ -211,7 +211,7 @@
                   <a href="article/article003.html" class="btn btn-primary">記事へ</a>
                 </div>
               </div>
-              <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
+              <div class="card">
                 <img src="img/album02.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
@@ -222,7 +222,7 @@
                   <a href="article/article002.html" class="btn btn-primary">記事へ</a>
                 </div>
               </div>
-              <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
+              <div class="card">
                 <img src="img/album01.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
@@ -238,7 +238,7 @@
         </div>
       </div>
     </section>
-    <hr class="stripe">
+
     <!-- Contact Section -->
     <section class="page-section h-100" id="contact" style="background-color: aliceblue;">
       <div class="container h-100">
@@ -293,16 +293,8 @@
 
     <!-- scrollreveal.js -->
     <script>
-      var ScrollrevealFade = {
-        origin: 'left',
-        distance: '0px',
-        scale: 1,
-        rotate: { x: 0, y: 0, z: 0 },
-        duration: 1200,
-        delay: 200
-      };
-      window.sr = new scrollReveal();
-      sr.reveal('.animate', ScrollrevealFade, 100);
+      window.sr = ScrollReveal();
+      sr.reveal('.animate', { easing: 'ease', duration: 2000, distance: '0px', opacity: 1, scale: 1 });
     </script>
 
     <!-- Bootstrap core JavaScript -->
@@ -326,11 +318,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var trigger = new ScrollTrigger();
-      });
-    </script>
+
   </body>
 </html>
