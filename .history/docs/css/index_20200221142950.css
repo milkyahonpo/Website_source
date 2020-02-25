@@ -1,0 +1,41 @@
+.title-section{
+  display: flex;
+  justify-content: space-around;
+}
+.title-section > aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section > aside > a{
+  width: 200px;
+}
+#canvas{
+  width: 50%;
+  height: auto;
+}
+.card-dark{
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+#infomation ol{
+  list-style-image: url("../img/list-image/normal.png");
+}
+#infomation ol.circle{
+  list-style-image: url("../img/list-image/circle.png");
+}
+.card-dark > div{
+  margin-bottom: 1.5rem;
+}
+.card-dark h5{
+  border-left: 3px solid #666666;
+  padding-left: 0.5rem;
+}
