@@ -1,0 +1,62 @@
+.masthead{
+  margin-top: -10px;
+  background-color: white;
+  background-image: url("../img/masthead.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.title-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section > aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section > aside > a{
+  width: 200px;
+}
+.title-section svg{
+  transform: rotate(-5deg);
+}
+#about{
+  background-color: white;
+}
+#canvas{
+  width: 100%;
+  height: auto;
+}
+path{
+  transition: fill-opacity 0.5s;
+}
+.fill-white path{
+  fill-opacity: 1;
+  fill: white;
+}
+.bx-wrapper{
+  margin-bottom: 0px !important;
+}
+.member-num{
+  filter: drop-shadow(0 0 3px white);
+}
+.grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 992px){
+  #canvas{
+    width: 80%;
+    height: auto;
+  }
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
