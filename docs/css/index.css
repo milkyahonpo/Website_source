@@ -1,3 +1,7 @@
+:root{
+  --contact: #DDDDDD;
+  --stripe: #3AA0F4;
+}
 .masthead{
   margin-top: -10px;
   background-color: white;
@@ -6,7 +10,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
 }
 .title-section{
   display: flex;
@@ -28,6 +31,12 @@
 }
 #about{
   background-color: white;
+}
+#news{
+  background: linear-gradient(#ffffff, #3AA0F4);
+}
+#contact{
+  background: var(--contact);
 }
 #canvas{
   width: 95%;
@@ -52,7 +61,7 @@ path{
   grid-template-columns: 1fr;
 }
 .stripe{
-  background: repeating-linear-gradient(-45deg, #3BA0F4, #3BA0F4 5px, aliceblue 5px, aliceblue 10px);
+  background: repeating-linear-gradient(-45deg, var(--stripe), var(--stripe) 5px, var(--contact) 5px, var(--contact) 10px);
   border: none;
   height: 10px;
   margin: 0;
@@ -64,5 +73,10 @@ path{
   }
   .grid{
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
