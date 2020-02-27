@@ -25,3 +25,10 @@
 .btn:hover::before{
   height: 100%
 }
+ol{
+  padding-left: 1rem;
+  list-style-image: url("../img/list-image/normal.png");
+}
+ol.circle{
+  list-style-image: url("../img/list-image/circle.png");
+}

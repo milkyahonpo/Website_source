@@ -16,11 +16,3 @@
   border-left: 3px solid #666666;
   padding-left: 0.5rem;
 }
-
-ol{
-  padding-left: 1rem;
-  list-style-image: url("../img/list-image/normal.png");
-}
-ol.circle{
-  list-style-image: url("../img/list-image/circle.png");
-}
