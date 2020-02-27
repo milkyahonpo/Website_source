@@ -32,41 +32,6 @@
 #about{
   background-color: white;
 }
-#news{
-  background: linear-gradient(#ffffff, #3AA0F4);
-}
-#contact{
-  background: var(--contact);
-}
-#canvas{
-  width: 95%;
-  height: auto;
-}
-path{
-  transition: fill-opacity 0.5s;
-}
-.fill-white path{
-  fill-opacity: 1;
-  fill: white;
-}
-.bx-wrapper{
-  margin-bottom: 0px !important;
-  box-shadow: 0 0 10px white;
-}
-.member-num{
-  filter: drop-shadow(0 0 3px white);
-}
-.grid{
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-.stripe{
-  background: repeating-linear-gradient(-45deg, var(--stripe), var(--stripe) 5px, var(--contact) 5px, var(--contact) 10px);
-  border: none;
-  height: 10px;
-  margin: 0;
-}
 #member a{
   position: relative;
   text-align: center;
@@ -118,6 +83,41 @@ path{
   border-left: 3px solid transparent;
   transform: rotate(-45deg);
   transition: all .2s;
+}
+#article{
+  background: linear-gradient(#ffffff, #DDDDDD);
+}
+#contact{
+  background: var(--contact);
+}
+#canvas{
+  width: 95%;
+  height: auto;
+}
+path{
+  transition: fill-opacity 0.5s;
+}
+.fill-white path{
+  fill-opacity: 1;
+  fill: white;
+}
+.bx-wrapper{
+  margin-bottom: 0px !important;
+  box-shadow: 0 0 10px white;
+}
+.member-num{
+  filter: drop-shadow(0 0 3px white);
+}
+.grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.stripe{
+  background: repeating-linear-gradient(-45deg, var(--stripe), var(--stripe) 5px, var(--contact) 5px, var(--contact) 10px);
+  border: none;
+  height: 10px;
+  margin: 0;
 }
 @media screen and (min-width: 992px){
   #canvas{
