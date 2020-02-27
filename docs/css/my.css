@@ -32,3 +32,6 @@ ol{
 ol.circle{
   list-style-image: url("../img/list-image/circle.png");
 }
+.fa-exclamation-triangle{
+  color: orange;
+}
