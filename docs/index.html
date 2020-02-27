@@ -54,13 +54,13 @@
               <a class="nav-link js-scroll-trigger" href="#about" onclick="moved()">チーム概要</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link js-scroll-trigger" href="#member" onclick="moved()">メンバー一覧</a>
+              <a class="nav-link js-scroll-trigger" href="#member" onclick="moved()">チームメンバー</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#infomation" onclick="moved()">今後の予定</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#news" onclick="moved()">アルバム</a>
+              <a class="nav-link js-scroll-trigger" href="#article" onclick="moved()">アルバム</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact" onclick="moved()">加入したい方は</a>
@@ -102,7 +102,7 @@
             </svg>
             <aside>
               <p class="text-white font-weight-light mb-5" style="font-size: 25px">PSO2のチーム「みるく屋本舗」です！</p>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">どんなチームなの？</a>
+              <a class="js-scroll-trigger" href="#about"><button class="btn btn-xl">どんなチームなの？</button></a>
             </aside>
           </div>
         </div>
@@ -122,20 +122,21 @@
             <p class="small text-muted mb-4">不定期ですがチームイベントも開催予定！</span></p>
             <p class="small text-muted mb-4">メンバーが牧牛のように自由気ままにプレイできる...</p>
             <p class="small text-muted mb-4">そんな空間となるように名付けました！</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#member">どんな人がいるの？</a>
+            <a class="js-scroll-trigger" href="#member"><button class="btn btn-xl">どんなひとがいるの？</button></a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Member Section -->
-    <section class="page-section bg-primary text-white pb-0" id="member">
+    <section class="page-section bg-primary text-white pb-4" id="member">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
             <h2 class="mt-0"><b>チームメンバー！</b></h2>
             <hr class="divider my-4">
-            <p class="mb-4 pb-4 lead">現在 <span class="member-num display-4">10</span> 人の仲間がいます！</p>
+            <p class="lead">現在 <span class="member-num display-4">10</span> 人の仲間がいます！</p>
+            <a href="member.html">一覧へ<span class="delta"></span></a>
           </div>
         </div>
       </div>
@@ -155,7 +156,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
-            <a href="member.html"><button class="btn btn-xl">もっと詳しく！</button></a>
+            <a class="js-scroll-trigger" href="#infomation"><button class="btn btn-xl">何をしていくの？</button></a>
           </div>
         </div>
       </div>
@@ -163,12 +164,12 @@
 
     <!-- Infomation Section -->
     <section class="page-section" id="infomation" style="background-color: white;">
-      <div class="container text-left">
+      <div class="container text-center">
         <h2 class="mt-0 text-center"><b>今後の予定！</b></h2>
         <hr class="divider my-4">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="grid">
+            <div class="grid mb-5">
               <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
                 <div class="card-body">
                   <div class="mb-3">
@@ -177,7 +178,7 @@
                   </div>
                   <h5 class="card-title">第２回チームイベント開催決定ッ！</h5>
                   <p class="card-text">遂に第２回チームイベント開催決定！…</p>
-                  <a href="article/news002.html"><button class="btn">記事へ</button></a>
+                  <a href="article/info002.html"><button class="btn">記事へ</button></a>
                 </div>
               </div>
               <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
@@ -187,23 +188,24 @@
                   </div>
                   <h5 class="card-title">第１回チームイベント開催決定ッ！</h5>
                   <p class="card-text">表題の通り、第１回チームイベント開催が決定…</p>
-                  <a href="article/news001.html"><button class="btn">記事へ</button></a>
+                  <a href="article/info001.html"><button class="btn">記事へ</button></a>
                 </div>
               </div>
             </div>
+            <a class="js-scroll-trigger" href="#article"><button class="btn btn-xl">どんなことがあったの？</button></a>
           </div>
         </div>
       </div>
     </section>
     <hr>
     <!-- Call to Action Section -->
-    <section class="page-section" id="news">
-      <div class="container text-left">
-        <h2 class="mt-0 text-center"><b>こんなことがありました！</b></h2>
+    <section class="page-section" id="article">
+      <div class="container text-center">
+        <h2 class="mt-0 text-center"><b>アルバム！</b></h2>
         <hr class="divider my-4">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="grid">
+            <div class="grid mb-5">
               <div class="card animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
                 <img src="img/album03.jpg" class="card-img-top" alt="第一回イベントの様子">
                 <div class="card-body">
@@ -238,6 +240,7 @@
                 </div>
               </div>
             </div>
+            <a class="js-scroll-trigger" href="#contact"><button class="btn btn-xl">入りたい！</button></a>
           </div>
         </div>
       </div>
@@ -248,7 +251,7 @@
       <div class="container h-100">
         <div class="row h-100 d-flex align-items-center justify-content-center">
           <div class="col-lg-10 text-center">
-            <h2 class="mt-0"><b>チームに入りたい方は...</b></h2>
+            <h2 class="mt-0"><b>加入したい方は...</b></h2>
             <hr class="divider my-4">
             <div class="mb-5">
               <p class="text-muted">下記のページから加入申請が可能です。</p>

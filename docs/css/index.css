@@ -67,6 +67,58 @@ path{
   height: 10px;
   margin: 0;
 }
+#member a{
+  position: relative;
+  text-align: center;
+  min-width: 90px;
+  padding: .5rem 1rem;
+  line-height: 2.5rem;
+  color: white;
+  border-radius: 3px;
+}
+#member a::before,
+#member a::after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  height:1px;
+  width:0;
+  background: white;
+  transition: .2s ease all;
+}
+#member a::after{
+  right:inherit;
+  top:inherit;
+  left: 0;
+  bottom:0;
+}
+#member a:hover:before,
+#member a:hover:after{
+  width:100%;
+  transition: .5s ease all;
+}
+
+#member a:link,
+#member a:visited{
+  text-decoration: none;
+}
+#member a:hover .delta{
+  right: -.5rem;
+}
+.delta{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  right: -.2rem;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transform: rotate(-45deg);
+  transition: all .2s;
+}
 @media screen and (min-width: 992px){
   #canvas{
     width: 80%;
