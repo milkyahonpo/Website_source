@@ -51,6 +51,7 @@ path{
 }
 .bx-wrapper{
   margin-bottom: 0px !important;
+  box-shadow: 0 0 10px white;
 }
 .member-num{
   filter: drop-shadow(0 0 3px white);
