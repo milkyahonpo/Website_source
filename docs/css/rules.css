@@ -1,9 +1,6 @@
 body{
   background-color: #dddddd;
 }
-.masthead{
-  background-image: none !important;
-}
 .page-section:last-of-type{
   position: relative;
   border-top: 1.5px dashed black;
@@ -40,23 +37,28 @@ body{
   left: 100%;
   margin-top: -15px;
   border: 15px solid transparent;
-  border-left: 15px solid #e0edff;
+  border-left: 15px solid white;
 }
 .personB::before{
   left: 0;
   margin-left: -30px;
   border-left: 15px solid transparent;
-  border-right: 15px solid #e0edff;
+  border-right: 15px solid white;
 }
 .personA div,
 .personB div{
   width: 250px;
-  background-color: #e0edff;
+  background-color: white;
   border-radius: 5px;
   padding: 1rem 2rem;
 }
+.personA b,
+.personB b{
+  color: #3AA0F4DD;
+}
 .personA p,
 .personB p{
+  font-size: 0.9rem;
   margin-bottom: 0 !important;
 }
 .personA h4,
