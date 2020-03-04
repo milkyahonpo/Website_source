@@ -2,6 +2,7 @@ body{
   line-height: 1.65rem;
   letter-spacing: .1em;
   text-align: justify;
+  color: #546E7A;
 }
 .btn{
   position: relative;
