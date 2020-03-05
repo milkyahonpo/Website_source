@@ -17,6 +17,9 @@ body::before{
   right: -5px;
   z-index: -1;
 }
+.masthead{
+  background-color: #ffffff05;
+}
 #member {
   padding-top: 92px !important;
 }
