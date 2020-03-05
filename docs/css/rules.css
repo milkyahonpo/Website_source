@@ -65,7 +65,24 @@ body{
 .personB h4{
   font-weight: bold;
 }
-@media screen and (min-width: 768px){
+#canvas{
+  width: 80%;
+  height: auto;
+}
+path{
+  stroke-width: .1px;
+  fill-opacity: 0;
+  transition: fill-opacity .5s;
+}
+.fill path{
+  fill-opacity: 1;
+}
+
+@media screen and (min-width: 992px){
+  #canvas{
+    width: 50%;
+    height: auto;
+  }
   .personA div,
   .personB div{
     width: 300px;
