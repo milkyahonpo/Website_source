@@ -70,7 +70,7 @@ body{
   height: auto;
 }
 path{
-  stroke-width: .1px;
+  stroke-width: .2px;
   fill-opacity: 0;
   transition: fill-opacity .5s;
 }
