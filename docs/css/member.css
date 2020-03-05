@@ -197,6 +197,19 @@ blockquote cite {
 .modal-content .download:hover{
   opacity: 0.8;
 }
+#canvas{
+  width: 80%;
+  height: auto;
+}
+path{
+  stroke-width: .2px;
+  fill-opacity: 0;
+  transition: fill-opacity .5s;
+}
+.fill path{
+  fill-opacity: 1;
+}
+
 @media screen and (min-width: 992px){
   .member-box{
     flex-direction: row-reverse;
@@ -228,5 +241,9 @@ blockquote cite {
   }
   blockquote:after{
     right: -20px;
+  }
+  #canvas{
+    width: 50%;
+    height: auto;
   }
 }
