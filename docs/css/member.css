@@ -174,7 +174,6 @@ blockquote cite {
   height: 2.3rem;
   width: auto;
   box-shadow: none !important;
-  padding-right: 1rem;
 }
 .modal-content{
   background-color: rgba(66, 66, 66, .5) !important;
@@ -232,6 +231,9 @@ path{
   }
   .member-box .content .name{
     padding: 0;
+  }
+  .name img{
+    padding-right: 1rem;
   }
   h1{
     font-size: 2.5rem;
